@@ -1,0 +1,15 @@
+/* Styles for Mobile devices */
+.container {
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Styles for Desktop devices (from 1440px) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 72px;
+  }
+}
