@@ -11,8 +11,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: #050505;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -62,6 +61,7 @@ body {
   min-width: 100%;
   min-height: 100vh;
   margin: 0;
+  background-color: #6dacf7;
 
   @media only screen and (min-width: 1200px) {
     font-weight: 700;
