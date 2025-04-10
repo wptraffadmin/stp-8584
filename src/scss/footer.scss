@@ -6,6 +6,11 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
+  width: 320px;
+
+  @include media(desktop) {
+    width: 1200px;
+  }
 }
 
 .download-section {
@@ -145,7 +150,16 @@
   line-height: 130%;
   color: #050505;
   text-align: center;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
+
+.copy span {
+  margin-right: 5px;
+}
+
 .copy-break {
   display: inline;
 }
