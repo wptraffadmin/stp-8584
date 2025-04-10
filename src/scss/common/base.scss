@@ -11,8 +11,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: #050505;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -52,6 +51,18 @@ h3 {
   }
 }
 
+.block-name-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 110%;
+  color: #fdfdfd;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 32px;
+  }
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -62,11 +73,24 @@ body {
   min-width: 100%;
   min-height: 100vh;
   margin: 0;
+  background-color: #6dacf7;
 
   @media only screen and (min-width: 1200px) {
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
+  }
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
   }
 }
 
