@@ -4,7 +4,7 @@
 
   @include media(desktop) {
     margin-top: 148px;
-    margin-bottom: 64px;
+    margin-bottom: 0;
   }
 }
 
@@ -33,12 +33,6 @@
     width: 60%;
   }
 }
-
-// .spark-text-h1 {
-//   @include media(desktop) {
-//     margin-bottom: 16px;
-//   }
-// }
 
 .spark-text-h3 {
   margin-top: 502px;
@@ -85,7 +79,6 @@ p {
   text-transform: uppercase;
   color: #fdfdfd;
   margin-top: 24px;
-  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;

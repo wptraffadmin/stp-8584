@@ -35,11 +35,14 @@
   line-height: 130%;
 }
 
+.desktop-nav ul li:hover {
+  color: #006300;
+}
+
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 0;
 
   @include media(desktop) {
     padding: 0;
@@ -70,11 +73,11 @@ body.no-scroll {
 }
 
 .burger {
-  width: 20px;
-  height: 16px;
   cursor: pointer;
   z-index: 2000;
-  margin-right: 10px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   @include media(desktop) {
     display: none;
@@ -82,7 +85,7 @@ body.no-scroll {
 }
 
 .burger-open {
-  width: 20px;
+  width: 24px;
   height: 16px;
   display: block;
 }

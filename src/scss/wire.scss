@@ -1,0 +1,73 @@
+.wire-container {
+  position: relative;
+}
+
+.h2-span-wire {
+  color: #fdfdfd;
+}
+
+.block-name-wire {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 32px;
+  }
+}
+
+.wire-text-h2 {
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.wire-text-h3 {
+  margin-bottom: 8px;
+  @include media(desktop) {
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+}
+
+.wire-img {
+  margin-bottom: 16px;
+  @include media(desktop) {
+    width: 389px;
+    height: 562px;
+    margin-bottom: 170px;
+  }
+}
+
+.wire2-img {
+  width: 47px;
+  height: 47px;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    width: 104px;
+    height: 104px;
+    margin-bottom: 32px;
+    margin-left: 412px;
+  }
+}
+
+.wire3-img {
+  width: 288px;
+  height: 209px;
+  margin-bottom: 40px;
+
+  @include media(desktop) {
+    width: 590px;
+    height: 410px;
+    margin-bottom: 0;
+  }
+}
+
+.wire-absolute-container {
+  @include media(desktop) {
+    position: absolute;
+    top: 163px;
+    right: -33.48px;
+  }
+}
