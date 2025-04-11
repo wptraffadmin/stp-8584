@@ -150,7 +150,7 @@
   display: flex;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 130%;
   color: #050505;
   text-align: center;
@@ -161,7 +161,7 @@
 }
 
 .copy span {
-  margin-right: 5px;
+  margin: 0 5px;
 }
 
 .copy-break {
@@ -253,7 +253,7 @@
   .copy {
     white-space: nowrap;
     margin-left: 87px;
-    font-size: 20px;
+    font-size: 14px !important;
   }
 }
 .copy-break {
