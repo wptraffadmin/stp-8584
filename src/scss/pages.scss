@@ -42,11 +42,13 @@
   font-size: 14px;
   line-height: 130%;
   color: #050505;
+  white-space: normal;
   text-align: center;
 }
 .copy-break {
   display: inline;
 }
+
 /* ===== DESKTOP ≥ 1200px ===== */
 @media screen and (min-width: 1200px) {
   .download-content-wrapper {
@@ -116,7 +118,6 @@
   .footer-links a:nth-of-type(1) {
     margin-right: 17px;
   }
-
   .footer-links .slash:nth-of-type(2) {
     margin-right: 17px;
     margin-left: 17px;
@@ -131,88 +132,103 @@
     font-size: 14px;
     line-height: 130%;
     text-transform: uppercase;
-    color: #050505;
+    color: var(--black);
   }
-
   .copy {
+    display: flex;
     white-space: nowrap;
     margin-left: 87px;
     font-size: 16px;
   }
-}
-.copy-break {
-  display: none;
-}
-.policy-list {
-  font-family: var(--font-family);
-  font-weight: 400;
-  display: block;
-  list-style-type: disc;
-  font-size: 16px;
-  line-height: 140%;
-  color: var(--black);
-  margin: 0;
-  padding-left: 20px;
-  list-style-position: outside;
-}
-p {
-  font-size: 16px;
-}
 
+  .copy-break {
+    display: none;
+  }
+
+  .policy-list {
+    font-family: var(--font-family);
+    font-weight: 400;
+    display: block;
+    list-style-type: disc;
+    font-size: 14px;
+    line-height: 140%;
+    color: var(--black);
+    margin: 0;
+    padding-left: 20px;
+    list-style-position: outside;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 1200px) {
   p {
     font-size: 18px;
   }
 }
-.policy-list {
-  font-size: 16px;
 
-  @media screen and (min-width: 1200px) {
+.policy-list {
+  text-decoration: underline;
+  padding-left: 20px;
+  list-style: disc;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .policy-list {
     font-size: 18px;
   }
 }
+
 h3 {
   font-size: 18px;
   line-height: 130%;
   font-weight: 700;
   color: #050505;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  h3 {
     font-size: 20px;
   }
 }
+
 h2 {
   font-size: 28px;
   line-height: 1.2;
   font-weight: 700;
   color: #050505;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  h2 {
     font-size: 48px;
   }
 }
+
 .thirdparty-list {
   list-style-type: disc;
   list-style-position: outside;
   padding-left: 24px;
+}
 
-  li {
-    margin-bottom: 8px;
-  }
+.thirdparty-list li {
+  margin-bottom: 8px;
+}
 
-  a {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 150%;
-    color: #050505;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+.thirdparty-list a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #050505;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
 
-    &:hover {
-      color: #2f80ed;
-    }
-  }
+.thirdparty-list a:hover {
+  color: #2f80ed;
 }
 
 .back-home-link {
@@ -230,29 +246,42 @@ h2 {
   color: #fdfdfd;
   text-decoration: none;
   padding-left: 8px;
-  padding-top: 52px;
+  padding-top: 51px;
 }
+
 .back-icon {
   width: 16px;
   height: 16px;
   margin-left: 16px;
-  margin-top: 52px;
+  margin-top: 51px;
 }
-#privacy-policy h2 {
-  margin-top: 24px;
 
-  @media screen and (min-width: 1200px) {
+#privacy-policy h2,
+#cookies-policy h1 {
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  #privacy-policy h2,
+  #cookies-policy h1 {
     margin-top: 64px;
   }
 }
-#privacy-policy h2 + p {
+
+#privacy-policy h2 + p,
+#cookies-policy h1 + p {
   margin-top: 24px;
   margin-bottom: 16px;
-  @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) {
+  #privacy-policy h2 + p,
+  #cookies-policy h1 + p {
     margin-top: 32px;
     margin-bottom: 24px;
   }
 }
+
 .info-title {
   margin-top: 16px;
 }
@@ -260,8 +289,10 @@ h2 {
 .info-intro {
   margin-top: 8px;
   margin-bottom: 16px;
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  .info-intro {
     margin-bottom: 24px;
   }
 }
@@ -269,16 +300,20 @@ h2 {
 .info-paragraph {
   margin-top: 8px;
   margin-bottom: 8px;
-  @media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .info-paragraph {
     margin-top: 8px;
     margin-bottom: 24px;
   }
 }
+
 @media screen and (min-width: 1200px) {
-  .privacy-intro {
+  .privacy-intro,
+  .cookies-intro {
     max-width: 100%;
     width: 100%;
-
     margin: 0 auto;
     line-height: 1.6;
     word-wrap: break-word;
@@ -287,46 +322,145 @@ h2 {
     font-weight: 400;
   }
 
-  .privacy-intro p {
+  .privacy-intro p,
+  .cookies-intro p {
     text-align: justify;
   }
-}
-@media screen and (min-width: 1200px) {
-  .privacy-intro {
-    width: 100%;
-    max-width: 100%;
-    font-size: 18px;
+
+  .privacy-intro,
+  .cookies-intro {
     line-height: 1.8;
     text-align: justify;
-    hyphens: auto;
   }
 
   .privacy-intro p,
+  .cookies-intro p,
   .privacy-intro h2,
+  .cookies-intro h1,
   .privacy-intro h3,
+  .cookies-intro h3,
   .privacy-intro ul,
-  .privacy-intro li {
+  .cookies-intro ul,
+  .privacy-intro li,
+  .cookies-intro li {
     width: 100%;
     max-width: 100%;
     text-align: justify;
     hyphens: auto;
   }
 }
-.privacy-intro h3:has(+ p) {
+
+.privacy-intro h3:has(+ p),
+.cookies-intro h3:has(+ p) {
   margin-bottom: 16px;
   margin-top: 16px;
 }
 
-.privacy-intro h3 + p {
+.privacy-intro h3 + p,
+.cookies-intro h3 + p {
   margin-top: 0;
 }
 
-.privacy-intro p:last-of-type {
+.privacy-intro p:last-of-type,
+.cookies-intro p:last-of-type {
   margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1200px) {
-  .privacy-intro p:last-of-type {
+  .privacy-intro p:last-of-type,
+  .cookies-intro p:last-of-type {
     margin-bottom: 64px;
   }
+}
+.paragraph-spacing-16 {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.h3-spacing-top {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.h4-definitions-spacing {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.paragraph-bottom-8 {
+  margin-bottom: 8px;
+}
+.spacing-top-24 {
+  margin-top: 24px;
+}
+
+.spacing-bottom-16 {
+  margin-bottom: 16px;
+}
+.cookies-spacing-1 {
+  margin-bottom: 16px;
+}
+
+.cookies-spacing-2 {
+  margin-bottom: 8px;
+}
+.cookies-gap-1 {
+  margin-top: 16px;
+}
+.cookies-gap-2 {
+  margin-top: 16px;
+}
+.cookies-gap-3 {
+  margin-top: 16px;
+}
+.cookies-bottom-8 {
+  margin-bottom: 8px;
+}
+.cookies-h4-top-8 {
+  margin-top: 8px;
+}
+.terms-title {
+  margin-bottom: 32px;
+  margin-top: 39px;
+}
+
+@media screen and (min-width: 768px) {
+  .terms-title {
+    margin-top: 64px;
+  }
+}
+.terms-paragraph {
+  margin-bottom: 16px;
+}
+.small-gap {
+  margin-bottom: 8px;
+}
+.gap-8 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.info-list {
+  padding-left: 20px;
+  list-style: disc;
+}
+.browser-list {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.browser-list a {
+  text-decoration: underline;
+}
+
+.browser-list li {
+  text-decoration: none;
+}
+.definition-list {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.definition-list li {
+  text-decoration: none;
+}
+
+.definition-list a {
+  text-decoration: underline;
 }
