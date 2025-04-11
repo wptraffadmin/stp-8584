@@ -15,6 +15,14 @@
   align-items: center;
   box-sizing: border-box;
 }
+.play-button {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.play-button:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
 
 .download-content {
   font-family: var(--font-family);
@@ -44,7 +52,9 @@
 
 .download-content {
   text-align: left;
-  // margin: 0 auto;
+}
+.footer-links a:hover {
+  color: #006300;
 }
 
 .download-content .cta {
@@ -76,7 +86,7 @@
   color: #050505;
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 140%;
   text-decoration: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -150,6 +160,7 @@
   line-height: 130%;
   color: #050505;
   text-align: center;
+  white-space: normal;
 
   @media screen and (max-width: 1199px) {
     flex-direction: column;
@@ -247,11 +258,13 @@
   }
 
   .copy {
+    display: flex;
     white-space: nowrap;
     margin-left: 87px;
     font-size: 14px !important;
   }
-}
-.copy-break {
-  display: none;
+
+  .copy-break {
+    display: none;
+  }
 }
