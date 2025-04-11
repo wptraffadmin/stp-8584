@@ -6,11 +6,7 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  width: 320px;
-
-  @include media(desktop) {
-    width: 1200px;
-  }
+  padding: 0 16px;
 }
 
 .download-section {
@@ -42,7 +38,7 @@
   flex-direction: column;
   width: 100%;
   box-sizing: border-box;
-  padding: 56px 16px 40px;
+  padding: 56px 0 40px;
   gap: 64px;
 }
 
