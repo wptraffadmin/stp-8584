@@ -6,7 +6,14 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
+  width: 100%;
+}
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
 .download-section {
@@ -174,14 +181,19 @@
 .copy-break {
   display: inline;
 }
-/* ===== DESKTOP ≥ 1200px ===== */
+.button-center {
+  @include media(desktop) {
+    margin-left: 113px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .download-content-wrapper {
     flex-direction: row;
+    gap: 113px;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
-    padding: 128px 253px 128px 72px;
+    padding: 128px 0 128px 0;
   }
 
   .play-button {
@@ -216,37 +228,29 @@
   .footer-links-wrapper {
     width: 100%;
     box-sizing: border-box;
-    justify-content: center;
     text-align: center;
   }
+
   .footer-links {
+    display: flex;
+    white-space: nowrap;
     flex-direction: row;
     align-items: center;
-    margin-left: 80px;
-    gap: 0;
+    flex-wrap: wrap;
   }
+
+  .footer-links-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
   .footer-links a,
   .footer-links .slash {
     margin: 0;
-  }
-  .footer-links a[href="https://www.google.com/policies/privacy/"]
-  {
-    margin-right: 17px;
-  }
-  .footer-links a:nth-of-type(3) {
-    margin-left: 87px;
-  }
-  .footer-links a:nth-of-type(1) {
-    margin-right: 17px;
+    padding: 0;
   }
 
-  .footer-links .slash:nth-of-type(2) {
-    margin-right: 17px;
-    margin-left: 17px;
-  }
-  .footer-links a:nth-of-type(2) {
-    margin-left: 17px;
-  }
   .slash {
     display: inline;
     font-family: var(--font-family);
@@ -260,11 +264,6 @@
   .copy {
     display: flex;
     white-space: nowrap;
-    margin-left: 87px;
-    font-size: 14px !important;
-  }
-
-  .copy-break {
-    display: none;
+    font-size: 14px;
   }
 }
