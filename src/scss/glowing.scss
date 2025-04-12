@@ -1,7 +1,9 @@
 .block-name-puzzle {
+  margin-top: 40px;
   margin-bottom: 16px;
 
   @include media(desktop) {
+    margin-top: 64px;
     margin-bottom: 32px;
   }
 }
