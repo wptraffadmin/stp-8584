@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (acceptBtn) {
     acceptBtn.addEventListener('click', () => handleConsent('accepted'));
 
-    // Обработка кликов по вложенным элементам
     acceptBtn.querySelectorAll('*').forEach(el => {
       el.addEventListener('click', () => handleConsent('accepted'));
     });
