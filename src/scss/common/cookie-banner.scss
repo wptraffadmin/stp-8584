@@ -18,7 +18,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-
   box-sizing: border-box;
 }
 .cookie-text-wrapper {
@@ -53,12 +52,16 @@
 
 .cookie-buttons {
   display: flex;
+  margin-bottom: 36px;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+
+  @include media(desktop) {
+    margin-bottom: 40px;
+  }
 }
 
-/* Кнопка как PNG */
 .cookie-btn-img {
   position: relative;
   width: 340px;
@@ -85,12 +88,13 @@
   font-family: 'Segoe UI', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #066707;
+  color: #fdfdfd;
   text-transform: uppercase;
-  pointer-events: none; /* только текст не кликается */
+  pointer-events: none;
 }
-
-/* Мобилка */
+.cookie-text-overlay.decline-text {
+  color: #228b22;
+}
 @media (max-width: 1200px) {
   #cookie-banner {
     padding: 16px;
