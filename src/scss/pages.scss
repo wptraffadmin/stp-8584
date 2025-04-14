@@ -202,11 +202,6 @@ h2 {
 .thirdparty-list {
   list-style-type: disc;
   list-style-position: outside;
-  padding-left: 24px;
-}
-
-.thirdparty-list li {
-  margin-bottom: 8px;
 }
 
 .thirdparty-list a {
@@ -239,6 +234,10 @@ h2 {
   text-decoration: none;
   padding-left: 8px;
   padding-top: 51px;
+}
+
+.back-text:hover {
+  color: #006300;
 }
 
 .back-icon {
@@ -276,6 +275,14 @@ h2 {
 
 .info-title {
   margin-top: 16px;
+}
+
+.margin-bottom-8 {
+  margin-bottom: 8px;
+}
+
+.margin-top-24 {
+  margin-top: 24px;
 }
 
 .info-intro {
@@ -417,9 +424,6 @@ h2 {
   .terms-title {
     margin-top: 64px;
   }
-  .info-list {
-    font-size: 18px;
-  }
 }
 .terms-paragraph {
   margin-bottom: 16px;
@@ -432,13 +436,11 @@ h2 {
   margin-bottom: 8px;
 }
 .info-list {
-  font-size: 16px;
   padding-left: 20px;
   list-style: disc;
 }
 .browser-list {
   padding-left: 20px;
-  font-size: 16px;
   list-style: disc;
 }
 

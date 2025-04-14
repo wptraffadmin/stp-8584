@@ -1,9 +1,9 @@
 .spark {
-  margin-top: 100px;
+  margin-top: 84px;
   margin-bottom: 40px;
 
   @include media(desktop) {
-    margin-top: 148px;
+    margin-top: 164px;
     margin-bottom: 0;
   }
 }
@@ -52,7 +52,7 @@
   width: 288px;
   height: 438px;
   position: absolute;
-  top: 284px;
+  top: 252px;
 
   @include media(desktop) {
     width: 470px;
@@ -68,12 +68,12 @@
   border-radius: 16px;
   border: none;
   background-image: url('/img/button-spark-mobile.png');
-  background-size: cover; /* Зменшує або збільшує фон, щоб він повністю займав контейнер */
-  background-position: center; /* Центрує фон */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 130%;
   text-transform: uppercase;
   color: #fdfdfd;

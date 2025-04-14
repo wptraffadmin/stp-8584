@@ -51,6 +51,16 @@ h3 {
   }
 }
 
+h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 130%;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+  }
+}
+
 .block-name-text {
   font-family: 'Inter', sans-serif;
   font-size: 22px;
