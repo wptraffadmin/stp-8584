@@ -1,8 +1,8 @@
-#cookie-banner {
+.cookie-banner {
   position: fixed;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -30%);
+  transform: translateX(-50%);
   width: 100%;
   height: auto;
   font-family: var(--font-family);
@@ -13,12 +13,6 @@
   color: var(--white);
   background-color: #1c50be;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  font-family: var(--font-family);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  box-sizing: border-box;
 }
 .cookie-text-wrapper {
   width: 100%;
@@ -28,7 +22,7 @@
 
 .cookie-text {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 36px;
   text-align: left;
   font-family: var(--font-family);
   font-weight: 700;
@@ -37,7 +31,7 @@
   text-transform: uppercase;
   color: #fdfdfd;
   overflow-wrap: break-word;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 }
 .cookie-text {
   @include media(desktop) {
@@ -46,7 +40,6 @@
     white-space: normal;
     overflow-wrap: break-word;
     word-break: break-word;
-    margin-bottom: 32px;
   }
 }
 
@@ -54,11 +47,12 @@
   display: flex;
   margin-bottom: 36px;
   justify-content: center;
-  gap: 20px;
+  gap: 16px;
   flex-wrap: wrap;
 
   @include media(desktop) {
     margin-bottom: 40px;
+    gap: 64px;
   }
 }
 
@@ -71,13 +65,23 @@
   background: none;
   padding: 0;
   display: inline-block;
+  background-image: url('/img/zel-des.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.cookie-btn-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  display: block;
+.decline {
+  background-image: url('/img/bel-des.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cookie-btn-img:hover {
+  background-image: url('/img/zel-hov-des.png');
+}
+
+.decline:hover {
+  background-image: url('/img/bel-hov-des.png');
 }
 
 .cookie-text-overlay {
@@ -96,24 +100,12 @@
   color: #228b22;
 }
 @media (max-width: 1200px) {
-  #cookie-banner {
-    padding: 16px;
-  }
-
   .cookie-btn-img {
     width: 289px;
-    height: 49px;
+    height: 48px;
   }
 
   .cookie-text-overlay {
     font-size: 12px;
-  }
-}
-.spark-text {
-  @media (max-width: 1199px) {
-    h3,
-    p {
-      max-width: 515px;
-    }
   }
 }

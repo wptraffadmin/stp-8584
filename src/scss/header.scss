@@ -75,9 +75,6 @@ body.no-scroll {
 .burger {
   cursor: pointer;
   z-index: 2000;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
 
   @include media(desktop) {
     display: none;
@@ -101,7 +98,7 @@ body.no-scroll {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 320px;
+  width: 100%;
   height: 100vh;
   background-color: #6dacf7;
   display: none;
@@ -110,21 +107,22 @@ body.no-scroll {
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.3s ease;
-  background-image: url('/img/bg.png');
 }
 
 .modal-menu.active {
-  margin-top: 71px;
-  padding-top: 29px;
+  margin-top: 60px;
+  padding-top: 16px;
   display: flex;
   overflow-y: auto;
   max-height: 100vh;
   flex-direction: column;
   opacity: 1;
+  background-image: url('/img/bg.png');
+  background-repeat: no-repeat;
 }
 
 .mobile-nav {
-  width: 100%;
+  width: 320px;
   height: 100vh;
 }
 
