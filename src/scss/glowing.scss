@@ -23,11 +23,6 @@
   }
 }
 
-.phone-wrapper:hover .glowing-img-phone,
-.phone-wrapper.active .glowing-img-phone {
-  transform: scale(1.05);
-}
-
 .glowing-text-block {
   margin-top: 24px;
 
@@ -45,7 +40,7 @@
   margin: 32px auto 40px auto;
 
   @include media(desktop) {
-    width: 357px;
+    width: 280px;
     padding-top: 20px;
     margin-bottom: 120px;
     margin-left: 80px;
