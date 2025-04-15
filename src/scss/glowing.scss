@@ -16,13 +16,10 @@
   margin-top: 24px;
   width: 320px;
   height: auto;
-  transform: scale(1);
-  transition: transform 0.8s ease-in-out;
 
   @include media(desktop) {
     margin-top: 32px;
     width: 570px;
-    position: static;
   }
 }
 
@@ -84,37 +81,4 @@
 .phone-wrapper {
   overflow: hidden;
   position: relative;
-}
-.star-fall {
-  position: absolute;
-  top: -5px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: visible;
-  z-index: 2;
-}
-.svg-star {
-  position: absolute;
-  top: 0;
-  width: 12px;
-  height: 12px;
-  opacity: 0;
-  animation: starFall 3.5s ease-in forwards;
-  transform-origin: center;
-}
-
-@keyframes starFall {
-  0% {
-    transform: translate(0, 0) rotate(0deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(var(--x), var(--y)) rotate(360deg);
-    opacity: 0;
-  }
 }
