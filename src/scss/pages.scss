@@ -119,9 +119,9 @@
   .slash {
     display: inline;
     font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 130%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
 
     text-transform: uppercase;
     color: #050505;
@@ -161,7 +161,6 @@
 }
 
 .policy-list {
-  text-decoration: underline;
   padding-left: 20px;
   list-style: disc;
   font-size: 16px;
@@ -203,17 +202,14 @@ h2 {
   list-style-type: disc;
   list-style-position: outside;
   padding-left: 24px;
-}
-
-.thirdparty-list li {
   margin-bottom: 8px;
 }
 
 .thirdparty-list a {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
+  font-size: 16px;
+  line-height: 140%;
   color: #050505;
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -252,7 +248,11 @@ h2 {
 #cookies-policy h1 {
   margin-top: 24px;
 }
-
+@media screen and (min-width: 1200px) {
+  .thirdparty-list a {
+    font-size: 18px;
+  }
+}
 @media screen and (min-width: 1200px) {
   #privacy-policy h2,
   #cookies-policy h1 {
@@ -417,7 +417,12 @@ h2 {
   .terms-title {
     margin-top: 64px;
   }
-  .info-list {
+  .browser-list {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info-list li {
     font-size: 18px;
   }
 }
@@ -436,6 +441,7 @@ h2 {
   padding-left: 20px;
   list-style: disc;
 }
+
 .browser-list {
   padding-left: 20px;
   font-size: 16px;

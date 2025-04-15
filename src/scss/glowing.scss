@@ -45,12 +45,12 @@
   display: block;
   width: 228px;
   transform: rotate(-17deg);
-  margin: 16.24px auto 40px auto;
+  margin: 32px auto 40px auto;
 
   @include media(desktop) {
     width: 357px;
     padding-top: 20px;
-    margin-bottom: 64px;
+    margin-bottom: 120px;
     margin-left: 80px;
   }
 }

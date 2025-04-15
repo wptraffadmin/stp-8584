@@ -61,10 +61,9 @@
 }
 
 .puzzle-img2 {
-  margin-bottom: px;
   width: 288px;
   height: 255px;
-  margin-bottom: 40px;
+
   @include media(desktop) {
     position: absolute;
     width: 592px;
