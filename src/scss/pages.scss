@@ -143,7 +143,6 @@
     display: block;
     list-style-type: disc;
     font-size: 14px;
-    line-height: 140%;
     color: var(--black);
     margin: 0;
     padding-left: 20px;
@@ -220,6 +219,22 @@ h2 {
 .back-home-link {
   display: flex;
   align-items: center;
+  padding-top: 24px;
+  color: #fdfdfd;
+
+  @include media(desktop) {
+    padding-top: 36px;
+  }
+}
+
+.back-home-link:hover {
+  color: #006300;
+}
+
+.back-icon {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
 }
 
 .back-text {
@@ -229,21 +244,8 @@ h2 {
   line-height: 130%;
   text-transform: uppercase;
   text-align: center;
-  color: #fdfdfd;
   text-decoration: none;
   padding-left: 8px;
-  padding-top: 51px;
-}
-
-.back-text:hover {
-  color: #006300;
-}
-
-.back-icon {
-  width: 16px;
-  height: 16px;
-
-  margin-top: 51px;
 }
 
 #privacy-policy h2,
